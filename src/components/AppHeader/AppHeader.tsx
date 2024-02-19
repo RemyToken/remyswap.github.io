@@ -20,11 +20,11 @@ const AppHeader: React.FC<{}> = () => {
       
       <div className="flex items-center justify-between w-full bg-white">
         <div className="flex items-center flex-1 p-4">
-          <Link href="/" shallow className="flex-1">
+          <a href="/" className="flex-1">
             <h1 className="flex items-center text-lg font-semibold text-white">
               <img src={'/remyswap.png'} width={250} height='auto' alt="Jupiter aggregator" />
             </h1>
-          </Link>
+          </a>
         </div>
 
         <div className="flex-1" />
