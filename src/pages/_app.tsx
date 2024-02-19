@@ -19,7 +19,6 @@ import IntegratedTerminal from 'src/content/IntegratedTerminal';
 import { IInit } from 'src/types';
 import V2SexyChameleonText from 'src/components/SexyChameleonText/V2SexyChameleonText';
 import V2FeatureButton from 'src/components/V2FeatureButton';
-import {TradingViewData} from 'src/components/TradingView';
 
 const isDevNodeENV = process.env.NODE_ENV === 'development';
 const isDeveloping = isDevNodeENV && typeof window !== 'undefined';
