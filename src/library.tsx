@@ -73,12 +73,15 @@ const defaultStyles: CSSProperties = {
   zIndex: 50,
 };
 
+
+
 const RenderLoadableJupiter = (props: IInit) => {
+  
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
     loadJupiter();
 
-    let intervalId: NodeJS.Timer;
+    let intervalId: NodeJS.Timeout;
     if (!loaded) {
       intervalId = setInterval(() => {
         const instance = (window as any).JupiterRenderer?.RenderJupiter;
@@ -88,6 +91,7 @@ const RenderLoadableJupiter = (props: IInit) => {
       }, 50);
     }
     return () => {
+      
       clearInterval(intervalId);
     };
   }, [loaded]);
