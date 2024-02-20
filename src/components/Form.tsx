@@ -321,7 +321,6 @@ const Form: React.FC<{
       <div className="w-full px-2">
         {!walletPublicKey ? (
           <UnifiedWalletButton
-            buttonClassName="!bg-transparent"
             overrideContent={
               <JupButton size="lg" className="w-full mt-4" type="button" onClick={handleClick}>
                 Connect Wallet
