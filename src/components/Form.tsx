@@ -331,7 +331,7 @@ const Form: React.FC<{
         ) : (
           <JupButton
             size="lg"
-            className="w-full mt-4 disabled:bg-[#C1C1C1]"
+            className="w-full mt-4 disabled:stone-200"
             type="button"
             onClick={onSubmit}
             disabled={isDisabled || loading}

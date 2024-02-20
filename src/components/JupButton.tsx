@@ -30,7 +30,7 @@ const JupButton = React.forwardRef(
         return 'p-5 text-md font-semibold';
       }
     })();
-    const background = bgClass || 'text-white bg-black';
+    const background = bgClass || 'text-white bg-red-300';
     return (
       <button
         type={type}
