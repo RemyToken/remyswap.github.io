@@ -11,12 +11,11 @@ module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
   ],
-  purge: {
-    safelist: [
-      'bg-[#B47F8F]',
-      'bg-[#C1C1C1]'
-    ]
-  },
+  safelist: [
+    'bg-[#B47F8F]',
+    'bg-[#C1C1C1]',
+    'bg-red'
+  ],
   theme: {
     extend: {
       colors: {
