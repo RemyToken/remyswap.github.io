@@ -39,7 +39,7 @@ const CodeBlocks = ({
 
   const valuesToFormat = {
     ...DISPLAY_MODE_VALUES,
-    endpoint: 'https://api.mainnet-beta.solana.com',
+    endpoint: 'https://mainnet.helius-rpc.com/?api-key=7d90af40-1308-4420-8ce5-20173f1c5ae5',
     ...(formConfigurator.strictTokenList === false ? { strictTokenList: formConfigurator.strictTokenList } : undefined),
     ...(formConfigurator.defaultExplorer !== 'Solana Explorer'
       ? { defaultExplorer: formConfigurator.defaultExplorer }
