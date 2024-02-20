@@ -14,7 +14,8 @@ module.exports = {
   safelist: [
     'bg-[#B47F8F]',
     'bg-[#C1C1C1]',
-    'bg-red'
+    'bg-red',
+    {pattern: /bg-./}
   ],
   theme: {
     extend: {
