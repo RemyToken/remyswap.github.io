@@ -11,12 +11,6 @@ module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
   ],
-  safelist: [
-    'bg-[#B47F8F]',
-    'bg-[#C1C1C1]',
-    'bg-red',
-    {pattern: /bg-./}
-  ],
   theme: {
     extend: {
       colors: {
@@ -25,8 +19,6 @@ module.exports = {
         'jupiter-jungle-green': '#24AE8F',
         'jupiter-primary': '#FBA43A',
         warning: '#FAA63C',
-        'remy-swap-primary': '#B47F8F',
-        'remy-swap-inactive': 'C1C1C1',
         
         'v3-bg': 'rgba(28, 41, 54, 1)',
         'v3-primary': '#c7f284',
