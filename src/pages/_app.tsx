@@ -135,7 +135,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 </div>
               </div>
             <div className="flex items-center lg:w-2/3 p-4 h-96 lg:h-full">
-              <iframe id="dextools-widget" title="DEXTools Trading Chart" className="w-full h-full" src="https://www.dextools.io/widget-chart/en/solana/pe-light/5WGYajM1xtLy3QrLHGSX4YPwsso3jrjEsbU1VivUErzk?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>
+              <iframe id="dextools-widget" title="DEXTools Trading Chart" className="w-full h-full" src="https://www.dextools.io/widget-chart/en/solana/pe-light/5WGYajM1xtLy3QrLHGSX4YPwsso3jrjEsbU1VivUErzk?theme=light&chartType=1&chartResolution=30&drawingToolbars=false"></iframe>
             </div>
           </div>
           <div className='w-full'>
