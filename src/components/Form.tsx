@@ -318,6 +318,17 @@ const Form: React.FC<{
         {walletPublicKey ? <FormError errors={errors} /> : null}
       </div>
 
+      <div className="w-full">        
+      {route && quoteResponseMeta && fromTokenInfo && toTokenInfo ? (
+          <PriceInfo
+            quoteResponse={quoteResponseMeta.quoteResponse}
+            fromTokenInfo={fromTokenInfo}
+            toTokenInfo={toTokenInfo}
+            loading={loading}
+          />
+        ) : null}
+      </div>  
+
       <div className="w-full px-2">
         {!walletPublicKey ? (
           <UnifiedWalletButton
@@ -345,15 +356,6 @@ const Form: React.FC<{
             )}
           </JupButton>
         )}
-
-        {route && quoteResponseMeta && fromTokenInfo && toTokenInfo ? (
-          <PriceInfo
-            quoteResponse={quoteResponseMeta.quoteResponse}
-            fromTokenInfo={fromTokenInfo}
-            toTokenInfo={toTokenInfo}
-            loading={loading}
-          />
-        ) : null}
       </div>
     </div>
   );
