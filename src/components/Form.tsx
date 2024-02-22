@@ -165,8 +165,8 @@ const Form: React.FC<{
 
   return (
     <div className="h-full flex flex-col items-center justify-center pb-4">
-      <div className="w-full mt-2 rounded-xl flex flex-col px-2">
-        <div className="flex-col">
+      <div className="h-full w-full mt-2 rounded-xl flex flex-col px-2">
+        <div className="flex-col h-full">
           <div
             className={classNames(
               'border-b border-transparent bg-[#B47F8F] rounded-xl transition-all',

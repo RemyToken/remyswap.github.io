@@ -88,10 +88,10 @@ export default function App({ Component, pageProps }: AppProps) {
         openGraph={{
           type: 'website',
           locale: 'en',
-          title: 'Jupiter Terminal',
-          description: 'Jupiter Terminal: An open-sourced, lite version of Jupiter that provides end-to-end swap flow.',
-          url: 'https://terminal.jup.ag/',
-          site_name: 'Jupiter Terminal',
+          title: 'Remy Swap',
+          description: 'Remy Swap: A simple swap for the Remy token.',
+          url: 'https://remyswap-github-io.vercel.app/',
+          site_name: 'Remy Swap',
           images: [
             {
               url: `https://og.jup.ag/api/jupiter`,
@@ -101,45 +101,52 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
         twitter={{
           cardType: 'summary_large_image',
-          site: 'jup.ag',
-          handle: '@JupiterExchange',
+          site: 'remytoken.com',
+          handle: '@RemyToken',
         }}
       />
 
-      <div>
-        <div>
+      <div className="lg:h-screen">
+        <div className="h-full">
           <AppHeader />
+          <div className="text-white text-center w-full text-5xl font-bold my-5">Official Remy Swap</div>
+          <div className="text-white text-center w-full text-xl font-bold mb-5">One meme to rule them all</div>
+          <div className="flex flex-col w-full lg:flex-row h-2/3">
+            
+            <div className="lg:w-1/3 h-full">
 
-          <div className="">
+                <div className="flex justify-center h-full">
+                  <div className="max-w-6xl rounded-xl flex flex-col md:flex-row w-full relative h-full">
+                    {/* Desktop configurator */}
 
-            <div className="flex justify-center">
-              <div className="max-w-6xl mt-12 rounded-xl flex flex-col md:flex-row w-full md:p-4 relative">
-                {/* Desktop configurator */}
+                      <div className="h-full w-full rounded-xl flex flex-col">
 
-                  <div className="mt-8 md:mt-0 md:ml-4 h-full w-full rounded-xl flex flex-col">
-
-                    <div className="flex flex-grow items-center justify-center text-white/75">
-                      <IntegratedTerminal
-                          rpcUrl={rpcUrl}
-                          formProps={watchAllFields.formProps}
-                          simulateWalletPassthrough={watchAllFields.simulateWalletPassthrough}
-                          strictTokenList={watchAllFields.strictTokenList}
-                          defaultExplorer={watchAllFields.defaultExplorer}
-                        />
-                    </div>
+                        <div className="h-full flex flex-grow items-center justify-center text-white/75">
+                          <IntegratedTerminal
+                              rpcUrl={rpcUrl}
+                              formProps={watchAllFields.formProps}
+                              simulateWalletPassthrough={watchAllFields.simulateWalletPassthrough}
+                              strictTokenList={watchAllFields.strictTokenList}
+                              defaultExplorer={watchAllFields.defaultExplorer}
+                            />
+                        </div>
+                      </div>
                   </div>
+                </div>
               </div>
+            <div className="flex items-center lg:w-2/3 p-4 h-96 lg:h-full">
+              <iframe id="dextools-widget" title="DEXTools Trading Chart" className="w-full h-full" src="https://www.dextools.io/widget-chart/en/solana/pe-light/5WGYajM1xtLy3QrLHGSX4YPwsso3jrjEsbU1VivUErzk?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>
             </div>
+          </div>
+          <div className='w-full'>
+            <Footer />
           </div>
         </div>
 
-        <iframe id="dextools-widget" title="DEXTools Trading Chart" width="500" height="400" src="https://www.dextools.io/widget-chart/en/solana/pe-light/5WGYajM1xtLy3QrLHGSX4YPwsso3jrjEsbU1VivUErzk?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"></iframe>
+        
 
         
 
-        <div className="w-full mt-12">
-          <Footer />
-        </div>
       </div>
     </>
   );
