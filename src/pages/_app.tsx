@@ -90,7 +90,7 @@ export default function App({ Component, pageProps }: AppProps) {
           locale: 'en',
           title: 'Remy Swap',
           description: 'Remy Swap: A simple swap for the Remy token.',
-          url: 'https://remyswap-github-io.vercel.app/',
+          url: 'https://www.remyswap.com/',
           site_name: 'Remy Swap',
           images: [
             {
